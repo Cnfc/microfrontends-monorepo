@@ -9,11 +9,12 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "cart",
-      filename: "remoteEnrty.js",
+      filename: "remoteEntry.js",
       // sets the name of manifest file.
       exposes: {
         "./CartShow": "./src/index", //Aliases
       },
+      shared: ["faker"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
