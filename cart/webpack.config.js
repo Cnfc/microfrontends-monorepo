@@ -12,9 +12,15 @@ module.exports = {
       filename: "remoteEntry.js",
       // sets the name of manifest file.
       exposes: {
-        "./CartShow": "./src/index", //Aliases
+        "./CartShow": "./src/bootstrap", //Aliases
       },
-      shared: ["faker"],
+      shared: {
+        faker: {
+          singleton: true,
+          // Only ones
+        },
+      },
+      // shared: ['faker']
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",

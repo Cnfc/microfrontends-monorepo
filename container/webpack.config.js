@@ -12,8 +12,8 @@ module.exports = {
       // Lists projects that the Container can search to get addition code
       remotes: {
         //Load the file at the listed url if something in Container has an omport like: import abc from 'products
-        products: "products@http://localhost:8081/remoteEntry.js",
         // "Name" of property in products webpack config file && URL
+        products: "products@http://localhost:8081/remoteEntry.js",
         cart: "cart@http://localhost:8082/remoteEntry.js",
       },
     }),
