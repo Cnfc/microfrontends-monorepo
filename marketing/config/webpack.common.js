@@ -6,7 +6,7 @@ module.exports = {
         exclude: /node_modules/, //exclude file folder name
         use: {
           loader: "babel-loader",
-          oprions: {
+          options: {
             presets: ["@babel/preset-react", "@babel/preset-env"],
             plugins: ["@babel/plugin-transform-runtime"],
           },

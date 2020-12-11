@@ -1,3 +1,2 @@
-// import("./bootstrap");
-
-console.log("Hi BOOSTSTRAP, IN MARKETING");
+import("./hello");
+import("./bootstrap");
