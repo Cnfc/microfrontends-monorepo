@@ -5,11 +5,7 @@ on:
     branches:
       - master
     paths:
-<<<<<<< HEAD
       - "packages/container/**"
-=======
-      - "/container/**"
->>>>>>> 214a334b0c8436214571920e2d9483b9ce7325ca
 
 defaults:
   run:
